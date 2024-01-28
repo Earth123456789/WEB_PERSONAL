@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Fjalla+One&family=Itim&display=swap"
         rel="stylesheet">
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <style>
         body {
             font-family: 'Dosis', sans-serif;
@@ -39,7 +41,7 @@
                 <ul id="menu" class="menu bg-primary w-56 rounded-box hidden z-50 mr-10 text-xl">
                     <li><a href="https://docs.google.com/document/d/1LKTyX99kwTNi3A11jp4rdCVAT1pB1_dMoakKRmE1chY/edit?usp=sharing"
                             target="_blank" ">เอกสาร (เนื้อหา)</a></li>
-                    <li><a href=" #">References</a></li>
+                    <li><a href=" References.html">References</a></li>
                 </ul>
             </button>
         </div>
@@ -48,7 +50,7 @@
     <!--PIC-->
     <div class="flex flex-col justify-center items-center mt-10">
         <h1 class="mb-5 text-3xl text-secondary headline">โครงงานส่วนบุคคล FUNDAMENTAL WEB PROGRAMMING</h1>
-        <img src="asset/WEB TECH.gif" alt="" class="rounded-lg">
+        <img src="asset/WEB TECH.gif" alt="" class="rounded-lg pic">
     </div>
 
     <div class="flex flex-col justify-center items-center mt-10">
@@ -58,73 +60,73 @@
     <!--CARD-->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-5">
         <div class="card lg:card-side bg-neutral-content shadow-xl mb-5 text-black">
-            <figure><img src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg" alt="Album" />
+            <figure><img class="p-5" src="asset/svelte.png" alt="Album" />
             </figure>
             <div class="card-body">
                 <h2 class="card-title">Svelte</h2>
                 <p>cybernetically enhanced web apps.</p>
                 <div class="card-actions justify-end">
-                    <button class="btn btn-success"><a href="svelte.html">Listen</a></button>
+                    <button class="btn btn-success"><a href="svelte.html">Click</a></button>
                 </div>
             </div>
         </div>
         <div class="card lg:card-side bg-neutral-content shadow-xl mb-5 text-black">
-            <figure><img src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg" alt="Album" />
+            <figure><img class="p-5" src="asset/tailwind.jpg" alt="Album" />
             </figure>
             <div class="card-body">
                 <h2 class="card-title">Tailwind</h2>
                 <p>Rapidly build modern websites without ever leaving your HTML.</p>
                 <div class="card-actions justify-end">
-                    <button class="btn btn-success"><a href="tailwind.html">Listen</a></button>
+                    <button class="btn btn-success"><a href="tailwind.html">Click</a></button>
                 </div>
             </div>
         </div>
         <div class="card lg:card-side bg-neutral-content shadow-xl mb-5 text-black">
-            <figure><img src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg" alt="Album" />
+            <figure><img class="p-5" src="asset/python.jpg" alt="Album" />
             </figure>
             <div class="card-body">
                 <h2 class="card-title">Python</h2>
                 <p>is friendly & easy to learn.</p>
                 <div class="card-actions justify-end">
-                    <button class="btn btn-success"><a href="python.html">Listen</a></button>
+                    <button class="btn btn-success"><a href="python.html">Click</a></button>
                 </div>
             </div>
         </div>
         <div class="card lg:card-side bg-neutral-content shadow-xl mb-5 text-black">
-            <figure><img src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg" alt="Album" />
+            <figure><img class="p-5" src="asset/javascript.png" alt="Album" />
             </figure>
             <div class="card-body">
                 <h2 class="card-title">JavaScript</h2>
                 <p> is a lightweight interpreted.</p>
                 <div class="card-actions justify-end">
-                    <button class="btn btn-success"><a href="javascript.html">Listen</a></button>
+                    <button class="btn btn-success"><a href="javascript.html">Click</a></button>
                 </div>
             </div>
         </div>
         <div class="card lg:card-side bg-neutral-content shadow-xl mb-5 text-black">
-            <figure><img src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg" alt="Album" />
+            <figure><img class="p-5" src="asset/PostgreSQL.png" alt="Album" />
             </figure>
             <div class="card-body">
                 <h2 class="card-title">PostgreSQL</h2>
                 <p>The World's Most Advanced Open Source Relational Database.</p>
                 <div class="card-actions justify-end">
-                    <button class="btn btn-success"><a href="postgreSQL.html">Listen</a></button>
+                    <button class="btn btn-success"><a href="postgreSQL.html">Click</a></button>
                 </div>
             </div>
         </div>
         <div class="card lg:card-side bg-neutral-content shadow-xl mb-5 text-black">
-            <figure><img src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg" alt="Album" />
+            <figure><img class="p-5" src="asset/mongodb.png" alt="Album" />
             </figure>
             <div class="card-body">
                 <h2 class="card-title">MongoDB</h2>
                 <p>The document data model maps to how you think and code.</p>
                 <div class="card-actions justify-end">
-                    <button class="btn btn-success"><a href="mongoDB.html">Listen</a></button>
+                    <button class="btn btn-success"><a href="mongoDB.html">Click</a></button>
                 </div>
             </div>
         </div>
     </div>
-    
+
     <footer class="footer items-center p-4 bg-neutral text-neutral-content">
         <aside class="items-center grid-flow-col">
             <svg width="36" height="36" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
@@ -144,6 +146,22 @@
                 </svg></path></a>
         </nav>
     </footer>
-    <script src="script.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function toggleMenu() {
+            let menu = document.getElementById("menu");
+            menu.classList.toggle("hidden");
+        }
+        function animation() {
+            ScrollReveal().reveal('.headline', { delay: 200 });
+            ScrollReveal().reveal('.body_center', { delay: 400 });
+            ScrollReveal().reveal('.card', { delay: 400 });
+            ScrollReveal().reveal('.footer', { delay: 600 });
+
+            gsap.from(".pic", { rotation: -360, x: -100, duration: 1.85 });
+            gsap.to(".pic", { scale: 0.5, duration: 1, delay: 1 });
+            gsap.to(".pic", { scale: 1, duration: 1, delay: 1.75 });
+        }
+        animation();
+
+    </script>
 </body>
