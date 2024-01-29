@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="synthwave">
+<html lang="en" data-theme="business">
 
 <head>
     <meta charset="UTF-8">
@@ -58,7 +58,7 @@
         <img src="asset/svelte 2.jpg" class="pic rounded-lg" alt="" width="1000" height="1000">
     </div>
     <div class="m-7">
-        <h1 class="text-3xl">What is Svelte ?</h1>
+        <h1 class="text-3xl text-accent">What is Svelte ?</h1>
         <div class="m-4">
             <p class="text-xl">” I can confidently say that Svelte has been the easiest JavaScript component library to
                 learn and start putting
@@ -66,7 +66,7 @@
 
             <p class="text-base">Jeff Delaney, from Svelte Realtime Todo List with Firebase</p>
         </div>
-        <h1 class="text-3xl">Svelte คืออะไร ?</h1>
+        <h1 class="text-3xl text-accent">Svelte คืออะไร ?</h1>
         <div class="m-4">
             <ul>
                 <li>เป็น Frontend Framework (จริงๆ คือเป็น Compiler) สำหรับทำ UI คล้ายๆ กับ React หรือ Vue</li>
@@ -78,7 +78,7 @@
                 <li>รองรับ Reactivity เหมือนกับ Vue</li>
             </ul>
         </div>
-        <h1 class="text-3xl">Svelte: เฟรมเวิร์คที่ไม่ใช่เฟรมเวิร์ค เพราะมันคือคอมไพเลอร์</h1>
+        <h1 class="text-3xl text-accent">Svelte: เฟรมเวิร์คที่ไม่ใช่เฟรมเวิร์ค เพราะมันคือคอมไพเลอร์</h1>
         <div class="m-4">
             <p class="text-xl">Rich Harris นักพัฒนาที่อาชีพหลักเป็นฝ่ายกราฟิกแบบอินเทอร์แอคทีฟของหนังสือพิมพ์ The New
                 York Times (ปัจจุบันก็ยังเป็นอยู่ ผลงาน) มีแนวคิดว่าเฟรมเวิร์คสำหรับงาน frontend แบบ React
@@ -103,7 +103,7 @@
             <div class="flex flex-col justify-center items-center mt-10 mb-7">
                 <img src="asset/svelte vs react.png" class="pic rounded-lg" alt="" width="1000" height="1000">
             </div>
-            <h1 class="text-3xl">3 สิ่งที่ทำให้ Svelte แตกต่าง</h1>
+            <h1 class="text-3xl text-accent">3 สิ่งที่ทำให้ Svelte แตกต่าง</h1>
             <div class="m-4">
                 <h2 class="text-2xl">1. Flexible and write less code</h2>
                 <p class="text-base">Svelte เป็น Compiler นั่นหมายความว่า code ในไฟล์ Svelte จะถูกแปลงจาก Hybrid
@@ -146,27 +146,35 @@
             <div class="flex flex-col justify-center items-center mt-6 mb-3">
                 <img src="asset/CSS.png" class="pic rounded-lg" alt="" width="500" height="500">
             </div>
+            <h1 class="text-3xl text-accent">Introduction</h1>
             <div class="m-4">
-                <h1 class="text-3xl">Introduction</h1>
-                <div class="m-4">
-                    <h2 class="text-2xl">Start a new project</h2>
-                    <p class="text-base">นามสกุลของไฟล์ จะเป็น .svelte เช่น <code
-                            class="bg-neutral-content text-black rounded-lg">App.svelte</code> มองเป็น <code
-                            class="bg-neutral-content text-black rounded-lg">Component</code></p>
-                    <p class="text-base">รูปแบบของไฟล์ svelte จะแบ่งเป็น <code
-                            class="bg-neutral-content text-black rounded-lg">&lt;script&gt;</code>, markup และ <code
-                            class="bg-neutral-content text-black rounded-lg">&lt;style&gt;</code> ในไฟล์เดียว</p>
-                    <pre class="bg-neutral-content rounded-lg mt-3">
-                        <code>
+                <h2 class="text-2xl">Start a new project</h2>
+                <p class="text-base">นามสกุลของไฟล์ จะเป็น .svelte เช่น <code
+                        class="bg-neutral-content text-black rounded-lg p-0.5">App.svelte</code> มองเป็น <code
+                        class="bg-neutral-content text-black rounded-lg p-0.5">Component</code></p>
 
-                        </code>
+                <pre class="bg-neutral-content rounded-lg mt-3 test_1 mb-3 relative"
+                    style="width: auto; height: 200px; overflow: auto;">
+                    <code class="bg-neutral-content text-secondary-content text-base-content ml-3">
+                        <p class="ml-3 text-base">npm create svelte@latest myapp</p><p class="ml-3 text-base">cd myapp</p><p class="ml-3 text-base">npm install</p><p class="ml-3 text-base">npm run dev</p>
+                    </code>
+                    <button class="copy-button_1 btn rounded-lg absolute top-0 right-0 m-3" onclick="copyToClipboard_1()">Copy</button>
                 </pre>
-
-                </div>
+                <p class="text-base">รูปแบบของไฟล์ svelte จะแบ่งเป็น <code
+                        class="bg-neutral-content text-black rounded-lg">&lt;script&gt;</code>, markup และ <code
+                        class="bg-neutral-content text-black rounded-lg">&lt;style&gt;</code> ในไฟล์เดียว</p>
+                <pre class="bg-neutral-content rounded-lg mt-3 test_2 mb-3 relative"
+                    style="width: auto; height: 200px; overflow: auto;">
+                            <code class="bg-neutral-content text-secondary-content text-base-content ml-3">
+                                <p class="text-base ml-3">&lt;script&gt;</p><p class="text-base ml-3">    // script</p><p class="text-base ml-3">&lt;/script&gt;</p><p class="text-base ml-3">&lt;h1&gt;Hello Svelte!&lt;/h1&gt;</p><p class="text-base ml-3">&lt;style&gt;</p><p class="text-base ml-3">    h1 {</p><p class="text-base ml-3">        font-size: 5rem;</p><p class="text-base ml-3">    }</p><p class="text-base ml-3">&lt;/style&gt;</p>
+                            </code>
+                            <button class="copy-button_2 btn rounded-lg absolute top-0 right-0 m-3" onclick="copyToClipboard_2()">Copy</button>
+                        </pre>
 
             </div>
-
         </div>
+
+    </div>
     </div>
 
     <footer class="footer items-center p-4 bg-neutral text-neutral-content">
@@ -193,14 +201,61 @@
             let menu = document.getElementById("menu");
             menu.classList.toggle("hidden");
         }
+
         function animation() {
             ScrollReveal().reveal('.headline', { delay: 850 });
+            ScrollReveal().reveal('.test_1', { delay: 250 });
+            ScrollReveal().reveal('.test_2', { delay: 250 });
             gsap.from(".pic", {
                 opacity: 0,
                 y: 100,
                 duration: 2
             });
         }
+
+        function copyToClipboard_1() {
+            const codeBlock = document.querySelector('.test_1');
+            const codeText = codeBlock.innerText;
+
+            const textarea = document.createElement('textarea');
+            textarea.value = codeText;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+
+            const copyButton = document.querySelector('.copy-button_1');
+
+            if (copyButton.innerText.toLowerCase() === 'copy') {
+                copyButton.innerText = 'Copied!';
+
+                setTimeout(() => {
+                    copyButton.innerText = 'Copy';
+                }, 500);
+            }
+        }
+        function copyToClipboard_2() {
+            const codeBlock = document.querySelector('.test_2');
+            const codeText = codeBlock.innerText;
+
+            const textarea = document.createElement('textarea');
+            textarea.value = codeText;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+
+            const copyButton = document.querySelector('.copy-button_2');
+
+            if (copyButton.innerText.toLowerCase() === 'copy') {
+                copyButton.innerText = 'Copied!';
+
+                setTimeout(() => {
+                    copyButton.innerText = 'Copy';
+                }, 500);
+            }
+        }
+
         animation();
 
     </script>
