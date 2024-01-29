@@ -29,7 +29,6 @@
             font-family: 'Fjalla One', sans-serif;
             font-family: 'Saira Condensed', sans-serif;
             font-family: 'Sriracha', cursive;
-
         }
     </style>
 </head>
@@ -55,11 +54,55 @@
             </button>
         </div>
     </nav>
+    <div class="flex flex-col justify-center items-center mt-10">
+        <img src="asset/tailwind.png" class="pic rounded-lg" alt="" width="1000" height="1000">
+    </div>
     <div class="m-7">
         <h1 class="text-3xl text-info">CSS คืออะไร ?</h1>
         <div class="m-4">
-            <p class="text-xl">CSS (Castcading Style Sheet) คือ ภาษาที่ใช้ในการตกแต่งหน้าเว็บของเราให้มีสีสัน สวยงามขึ้น</p>
+            <p class="text-xl">CSS (Castcading Style Sheet) คือ ภาษาที่ใช้ในการตกแต่งหน้าเว็บของเราให้มีสีสัน สวยงามขึ้น
+            </p>
         </div>
+        <h1 class="text-3xl text-info">CSS Framework คืออะไร ?</h1>
+        <div class="m-4">
+            <p class="text-xl">CSS Framework คือ ชุดคำสั่ง CSS ที่ถูกเขียนไว้ล่วงหน้าแล้ว เราสามารถเรียกใช้งานได้เลย
+                ตัวอย่าง
+                CSS Framework ที่ได้รับความนิยม เช่น Bootstrap, Tailwind, Semantic UI เป็นต้น
+            </p>
+        </div>
+        <h1 class="text-3xl text-info">Tailwind CSS ทำอะไรได้บ้าง ?</h1>
+        <div class="m-4">
+            <p class="text-xl">คราวนี้ลองมาดูประโยชน์ของการใช้งาน Tailwind CSS กันบ้าง ซึ่งข้อดีของ TailwindCSS มีดังนี
+            </p>
+
+            <ul class="list-disc pl-5 mt-2">
+                <li class="mb-2"> Tailwind CSS จะ Build CSS ออกมาเท่าที่ใช้งานเพราะเราจะทำการ render style.css ออกมา
+                    ไม่ได้เอาไฟล์ CSS ทั้งหมดมาใช้ </li>
+                <li class="mb-2"> สามารถเลือก Modules เข้ามาใช้งานได้ ไม่จำเป็นต้องเลือกทุก Modules </li>
+                <li class="mb-2"> สามารถปรับแต่ง Theme ของเราได้ตามอัธยาศัย </li>
+                <li class="mb-2"> สามารถจัดการกับ display ใหม่ๆอย่าง flex และ grid ได้ง่ายขึ้น </li>
+                <li class="mb-2"> สามารถสร้าง components ขึ้นมาใช้งานได้เลยเหมาะกับ Modern framework อย่าง React,
+                    Angular และ VueJS </li>
+                <li class="mb-2"> สามารถ Custom breakpoint สำหรับการทำ Responsive Web ได้ </li>
+                <li class="mb-2"> สามารถสร้าง dark mode ขึ้นมาให้ user เลือกสลับ mode ไปมาได้ </li>
+            </ul>
+
+            <p>จะเห็นว่า Tailwind CSS นั้นมีความสามารถที่ช่วยแก้ปัญหาของ CSS Framework รู่นก่อนหน้า
+                และยังเหมาะกับการทำงานกับ Front-end Framework ยุคใหม่อย่าง React, Angular และ VueJS
+            </p>
+        </div>
+        <h1 class="text-3xl text-info">Tailwind CSS ทำงานยังไง</h1>
+        <div class="m-4">
+            <div class="flex flex-col justify-center items-center m-10">
+                <img src="asset/how_tailwind_work.png" class="pic rounded-lg" alt="" width="500" height="500">
+            </div>
+            <p class="text-xl">หลักการทำงานของ Tailwind CSS คือ จะมี scanner เข้าไปค้นหา TailwindCSS class ใน html,
+                Javascript หรือ file อื่นๆที่เรากำหนดไว้ใน tailwind.config.js หลังจากนั้น render output ออกมาเป็น
+                CSS(styles.css) และถ้าเราต้องการ custom stylesheet หรือสร้าง components ขึ้นมาใหม่เราจะเข้าไปเขียนใน
+                style.src.css
+            </p>
+        </div>
+        <iframe src="https://codepen.io/Vipat-Choknantawong/pen/dyrJdMo" width="100%" height="600" frameborder="0"></iframe>
     </div>
     <footer class="footer items-center p-4 bg-neutral text-neutral-content">
         <aside class="items-center grid-flow-col">
