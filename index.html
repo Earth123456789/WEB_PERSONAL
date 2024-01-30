@@ -49,7 +49,7 @@
 
     <!--PIC-->
     <div class="flex flex-col justify-center items-center mt-10">
-        <h1 class="mb-5 text-3xl text-success headline">โครงงานส่วนบุคคล FUNDAMENTAL WEB PROGRAMMING</h1>
+        <h1 class="mb-5 text-3xl text-success for_head">โครงงานส่วนบุคคล FUNDAMENTAL WEB PROGRAMMING</h1>
         <img src="asset/WEB TECH.gif" alt="" class="rounded-lg pic">
     </div>
 
@@ -157,10 +157,17 @@
             ScrollReveal().reveal('.card', { delay: 400 });
             ScrollReveal().reveal('.footer', { delay: 300 });
 
-            gsap.from(".pic", { rotation: -360, x: -100, duration: 1.85 });
-            gsap.to(".pic", { scale: 0.5, duration: 1, delay: 1 });
-            gsap.to(".pic", { scale: 1, duration: 1, delay: 1.75 });
+            var t1 = gsap.timeline();
+            t1.from(".pic", { rotation: -360, x: -100, duration: 0.9 });
+            t1.to(".pic", { scale: 0.5, duration: 1, delay: 0.2 });
+            t1.to(".pic", { scale: 1, duration: 1, delay: 0.1 });
+
+            var t2 = gsap.timeline();
+            t2.from(".for_head", {duration: 1, x: -2000})
+            t2.to(".for_head", {duration: 1, x: 0})
         }
+
+        
         animation();
 
     </script>
