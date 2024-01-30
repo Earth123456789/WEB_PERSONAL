@@ -152,15 +152,14 @@
             menu.classList.toggle("hidden");
         }
         function animation() {
-            ScrollReveal().reveal('.headline', { delay: 1850 });
+            ScrollReveal().reveal('.headline', { delay: 850 });
             ScrollReveal().reveal('.body_center', { delay: 400 });
             ScrollReveal().reveal('.card', { delay: 400 });
             ScrollReveal().reveal('.footer', { delay: 300 });
 
             var t1 = gsap.timeline();
-            t1.from(".pic", { rotation: -360, x: -100, duration: 0.9 });
-            t1.to(".pic", { scale: 0.5, duration: 1, delay: 0.2 });
-            t1.to(".pic", { scale: 1, duration: 1, delay: 0.1 });
+            t1.from(".pic", {duration: 1, x: -2000})
+            t1.to(".pic", {duration: 1, x: 0})
 
             var t2 = gsap.timeline();
             t2.from(".for_head", {duration: 1, x: -2000})

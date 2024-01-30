@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="synthwave">
+<html lang="en" data-theme="business">
 
 <head>
     <meta charset="UTF-8">
@@ -17,10 +17,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Dosis&family=Fjalla+One&family=Saira+Condensed:wght@500&family=Sriracha&display=swap"
         rel="stylesheet">
-
-
     <style>
-        body {
+        * {
             font-family: 'Dosis', sans-serif;
             font-family: 'Fjalla One', sans-serif;
             font-family: 'Itim', cursive;
@@ -31,11 +29,150 @@
             font-family: 'Sriracha', cursive;
 
         }
+
+        .graph_1 {
+            width: 63.61%;
+        }
+
+        .graph_2 {
+            width: 52.97%;
+        }
+
+        .graph_3 {
+            width: 49.28%;
+        }
+
+        .graph_4 {
+            width: 48.66%;
+        }
+
+        .graph_5 {
+            width: 38.87%;
+        }
+
+        .hide {
+            width: 10%;
+        }
     </style>
 </head>
 
 <body>
-    <script></script>
+    <nav class="navbar bg-primary text-base-content sticky top-0 z-30 shadow-md headline">
+        <div class="flex-1">
+            <a href="index.html" class="btn btn-ghost text-xl">Project</a>
+        </div>
+        <div class="flex-none mx-5">
+            <button type="button" class="btn btn-square btn-ghost" onclick="toggleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    class="inline-block w-5 h-5 stroke-current">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z">
+                    </path>
+                </svg>
+                <ul id="menu" class="menu bg-primary w-56 rounded-box hidden z-50 mr-10 text-xl">
+                    <li><a href="https://docs.google.com/document/d/1LKTyX99kwTNi3A11jp4rdCVAT1pB1_dMoakKRmE1chY/edit?usp=sharing"
+                            target="_blank" ">เอกสาร (เนื้อหา)</a></li>
+                    <li><a href=" References.html">References</a></li>
+                </ul>
+            </button>
+        </div>
+    </nav>
+    <div class="flex flex-col justify-center items-center mt-10">
+        <img src="asset/JavaScript-logo.png" class="pic rounded-lg" alt="" width="750" height="750">
+    </div>
+    <div class="m-7">
+        <h1 class="text-3xl text-warning">JavaScript คืออะไร ?</h1>
+        <div class="m-4">
+            <p class="text-xl">จาวาสคริปต์ (JavaScript) คือ ภาษาคอมพิวเตอร์ที่ใช้ในการเขียนโปรแกรมบนระบบของอินเทอร์เน็ต
+                ที่ได้รับความนิยมเป็นอย่างมาก จาวาสคริปต์ เป็นภาษาสคริปต์ในเชิงวัตถุ สำหรับการสร้างและการพัฒนาเว็บไซต์
+                เพื่อให้เว็บไซต์ดูมีการเคลื่อนไหว สามารถตอบสนองผู้ที่เข้ามาใช้งานในเว็บไซต์ได้มากขึ้น
+                จะมีวิธีการทำงานที่เป็นลักษณะการแปลความและดำเนินงานทีละคำสั่ง หรือที่เรียกกันว่าอ็อบเจ็กโอเรียลเต็ด
+                (Object Oriented Programming) ซึ่งจะมีเป้าหมายออกแบบและพัฒนาโปรแกรมที่อยู่ในระบบอินเทอร์เน็ต
+                สำหรับผู้ที่ใช้การเขียนด้วยภาษา HTML ก็สามารถที่จะทำงานข้ามแพลตฟอร์มได้ ซึ่งจะทำงานร่วมกันกับ ภาษา Java
+                และภาษา HTML โดยจะได้ทั้งฝั่งเซิร์ฟเวอร์ (Server) และฝั่งไคลเอนต์ (Client)
+            </p>
+        </div>
+        <h1 class="text-3xl text-warning">ภาษาที่อยู่บนพื้นฐาน DOM</h1>
+        <div class="m-4">
+            <p class="text-xl">JavaScript ใช้โดยส่วนใหญ่ในเบราว์เซอร์ ทำให้นักพัฒนาสามารถควบคุมเนื้อหาบนเว็บเพจผ่าน DOM
+                และจัดการข้อมูลด้วย AJAX และ IndexedDB รวมถึงการวาดกราฟิกด้วย Canvas
+                และการโต้ตอบกับอุปกรณ์ที่ใช้งานเบราว์เซอร์ผ่าน API ต่าง ๆ และอื่น ๆ อีกมากมาย JavaScript
+                เป็นหนึ่งในภาษาที่ใช้กันอย่างแพร่หลายในโลกของ Software Development
+                เนื่องจากการเติบโตและการปรับปรุงประสิทธิภาพของ API ที่มีให้ในเบราว์เซอร์อยู่ตลอดเวลา
+            </p>
+            <div class="flex flex-col justify-center items-center mt-10">
+                <img src="asset/DOM_ja.png" class="pic rounded-lg" alt="" width="500" height="500">
+            </div>
+        </div>
+        <h1 class="text-3xl text-warning">JavaScript ทำอะไรได้บ้าง</h1>
+        <div class="m-4">
+            <p class="text-xl">JS ถือเป็นอีกหนึ่งภาษาที่ทำอะไรได้หลายอย่าง ครอบจักรวาลเลยทีเดียว ไม่น้อยหน้าภาษา
+                Python เลย นี่คือด้านหลัก ๆ ที่ JavaScript สามารถทำได้
+            </p>
+        </div>
+        <div class="ml-4">
+            <div class="ml-4">
+                
+                <div class="h-20 bg-yellow-500 border border-solid border-gray-700 m-2 p-2 hide graph graph_1 rounded-lg"><p class="text-base text-white">JavaScript 63.61%</p></div>
+                <div class="h-20 bg-orange-500 border border-solid border-gray-700 m-2 p-2 hide graph graph_2 rounded-lg"><p class="text-base text-white">HTML/CSS 52.97%</p></div>
+                <div class="h-20 bg-gray-500 border border-solid border-gray-700 m-2 p-2 hide graph graph_3 rounded-lg"><p class="text-base text-white">Python 49.28%</p></div>
+                <div class="h-20 bg-blue-500 border border-solid border-gray-700 m-2 p-2 hide graph graph_4 rounded-lg"><p class="text-base text-white">SQL 48.66%</p></div>
+                <div class="h-20 bg-purple-500 border border-solid border-gray-700 m-2 p-2 hide graph graph_5 rounded-lg"><p class="text-base text-white">TypeScript 38.87%</p></div>
+
+                <div class="flex flex-col justify-center items-center mt-10">
+                    <button class="btn btn-accent" onclick="toggleWidth()">Toggle Width</button>
+                </div>
+                <p class="text-base">Top 5 Most popular technologies Programming, scripting, and markup languages in
+                    2023
+                </p>
+            </div>
+
+        </div>
+        <footer class="footer items-center p-4 bg-neutral text-neutral-content">
+            <aside class="items-center grid-flow-col">
+                <svg width="36" height="36" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                    clip-rule="evenodd" class="fill-current">
+                    <path
+                        d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z">
+                    </path>
+                </svg>
+                <p>Copyright © 2024 - All right reserved</p>
+            </aside>
+            <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+                <a href="https://github.com/Earth123456789/WEB_PERSONAL" target="_blank" rel="noopener"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        class="bi bi-github" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                    </svg></path></a>
+            </nav>
+        </footer>
+        <script>
+            function toggleMenu() {
+                let menu = document.getElementById("menu");
+                menu.classList.toggle("hidden");
+            }
+            function animation() {
+                ScrollReveal().reveal('.headline', { delay: 850 });
+                ScrollReveal().reveal('.test_1', { delay: 250 });
+                ScrollReveal().reveal('.test_2', { delay: 250 });
+                gsap.from(".pic", {
+                    opacity: 0,
+                    y: 100,
+                    duration: 2
+                });
+            }
+
+            function toggleWidth() {
+                const graphs = document.querySelectorAll('.graph');
+                graphs.forEach(graph => {
+                    graph.classList.toggle("hide");
+                });
+            }
+
+
+            animation();
+        </script>
 </body>
 
 </html>
