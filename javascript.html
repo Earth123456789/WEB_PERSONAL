@@ -57,7 +57,7 @@
 </head>
 
 <body>
-    <nav class="navbar bg-primary text-base-content sticky top-0 z-30 shadow-md headline">
+    <nav class="navbar bg-primary text-base-content sticky top-0 z-30 shadow-md">
         <div class="flex-1">
             <a href="index.html" class="btn btn-ghost text-xl">Project</a>
         </div>
@@ -71,7 +71,7 @@
                 </svg>
                 <ul id="menu" class="menu bg-primary w-56 rounded-box hidden z-50 mr-10 text-xl">
                     <li><a href="https://docs.google.com/document/d/1LKTyX99kwTNi3A11jp4rdCVAT1pB1_dMoakKRmE1chY/edit?usp=sharing"
-                            target="_blank" ">เอกสาร (เนื้อหา)</a></li>
+                            target="_blank" ">ดูเอกสาร</a></li>
                     <li><a href=" References.html">References</a></li>
                 </ul>
             </button>
@@ -111,9 +111,11 @@
             </p>
         </div>
         <div class="ml-4">
-            <div class="ml-4">
+            <div class="ml-4 headline">
                 <p class="text-base">Top 5 Most popular technologies Programming, scripting, and markup languages in
-                    2023
+                    2023 <br>Ref : <a class="text-error"
+                        href="https://survey.stackoverflow.co/2023/#most-popular-technologies-language"
+                        target="_blank">stackoverflow</a>
                 </p>
                 <div
                     class="h-20 bg-yellow-500 border border-solid border-gray-700 m-2 p-2 hide graph graph_1 rounded-lg">
@@ -191,7 +193,7 @@
             menu.classList.toggle("hidden");
         }
         function animation() {
-            ScrollReveal().reveal('.headline', { delay: 850 });
+            ScrollReveal().reveal('.headline', { delay: 250 });
             ScrollReveal().reveal('.test_1', { delay: 250 });
             ScrollReveal().reveal('.test_2', { delay: 250 });
             gsap.from(".pic", {
