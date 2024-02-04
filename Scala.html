@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind</title>
+    <title>Scala</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
@@ -58,12 +58,12 @@
                         <summary>Technologies</summary>
                         <ul class="p-2">
                             <li><a href="svelte.html">Svelte</a></li>
-                            <li><a href="#">Tailwind</a></li>
+                            <li><a href="tailwind.html">Tailwind</a></li>
                             <li><a href="python.html">Python</a></li>
                             <li><a href="javascript.html">JavaScript</a></li>
                             <li><a href="postgreSQL.html">PostgreSQL</a></li>
                             <li><a href="mongoDB.html">MongoDB</a></li>
-                            <li><a href="Scala.html">Scala</a></li>
+                            <li><a href="#">Scala</a></li>
                             <li><a href="Php.html">php</a></li>
                             <li><a href="Angular.html">Angular</a></li>
                         </ul>
@@ -95,66 +95,49 @@
     </nav>
 
     <div class="flex flex-col justify-center items-center mt-10">
-        <img src="asset/tailwind 2.png" class="pic rounded-lg" alt="" width="1000" height="1000">
+        <img src="asset/scala_pro.jpg" class="pic rounded-lg" alt="" width="750" height="750">
     </div>
     <div class="m-7">
-        <h1 class="text-3xl text-info">CSS คืออะไร ?</h1>
+        <h1 class="text-3xl text-error">Scala คืออะไร ?</h1>
         <div class="m-4">
-            <p class="text-xl">CSS (Castcading Style Sheet) คือ ภาษาที่ใช้ในการตกแต่งหน้าเว็บของเราให้มีสีสัน สวยงามขึ้น
+            <p class="text-xl">Scala เป็นภาษาเขียนโปรแกรมแบบหลากหลายกระบวนทัศน์ที่ทันสมัย
+                ที่ออกแบบมาเพื่อแสดงรูปแบบการเขียนโปรแกรมโดยทั่วไปที่กระชับ สง่างาม และมีชนิดข้อมูลที่ปลอดภัย
+                (type-safe) ซึ่งผสานคุณสมบัติของภาษาเชิงวัตถุและภาษาเชิงฟังก์ชัน
             </p>
         </div>
-        <h1 class="text-3xl text-info">CSS Framework คืออะไร ?</h1>
+        <h1 class="text-3xl text-error">Scala เป็นภาษาเชิงฟังก์ชัน</h1>
         <div class="m-4">
-            <p class="text-xl">CSS Framework คือ ชุดคำสั่ง CSS ที่ถูกเขียนไว้ล่วงหน้าแล้ว เราสามารถเรียกใช้งานได้เลย
-                ตัวอย่าง
-                CSS Framework ที่ได้รับความนิยม เช่น Bootstrap, Tailwind, Semantic UI เป็นต้น
+            <p class="text-xl">Scala เป็นภาษาการเขียนโปรแกรมเชิงวัตถุที่แท้จริง ในแง่ที ่ทุกค่าเป็นวัตถุ
+                ชนิดข้อมูลและพฤติกรรมของวัตถุอธิบายโดยคลาส (classes) และ ลักษณะ (traits) คลาสจะถูกขนายโดยการจัดชั้นย่อย
+                (subclassing) และกลไลองค์ประกอบแบบผสมผสาน (mixin-based composition)
+                ที่มีความยืดหยุ่นเพื่อทดแทนสำหรับการสืบทอดหลายแบบ
             </p>
         </div>
-        <h1 class="text-3xl text-info">Tailwind CSS ทำอะไรได้บ้าง ?</h1>
+        <h1 class="text-3xl text-error">Scala มีชนิดข้อมูลแบบคงที่</h1>
         <div class="m-4">
-            <p class="text-xl">คราวนี้ลองมาดูประโยชน์ของการใช้งาน Tailwind CSS กันบ้าง ซึ่งข้อดีของ TailwindCSS มีดังนี
-            </p>
+            <p class="text-xl">Scala ยังเป็นภาษาเชิงฟังก์ชันในแง่ที่ ทุกฟังก์ชันเป็นค่า Scala
+                มีไวยกรณ์แบบง่ายสำหรับกำหนดฟังก์ชันที่ไม่ระบุตัวตน รองรับ ฟังก์ชันที่มีลำดับสูงขึ้น (higher-order
+                functions) ทำให้ฟังก์ชันสามารถ ซ้อนกันได้ (nested) และรองรับ currying, เคสคลาส (case class) ของ Scala
+                สนับสนุน รูปแบบการจับคู่ (pattern-matching)
+                เป็นการจำลองชนิดข้อมูลแบบพีชคณิตที่ใช้ในภาษาเชิงฟังก์ชันหลายภาษา, วัตถุ Singleton
+                ทำให้มีวิธีที่สะดวกในการจัดกลุ่มฟังก์ชันที่ไม่ใช้สมาชิกของคลาส
 
-            <ul class="list-disc pl-5 mt-2">
-                <li class="mb-2"> Tailwind CSS จะ Build CSS ออกมาเท่าที่ใช้งานเพราะเราจะทำการ render style.css ออกมา
-                    ไม่ได้เอาไฟล์ CSS ทั้งหมดมาใช้ </li>
-                <li class="mb-2"> สามารถเลือก Modules เข้ามาใช้งานได้ ไม่จำเป็นต้องเลือกทุก Modules </li>
-                <li class="mb-2"> สามารถปรับแต่ง Theme ของเราได้ตามอัธยาศัย </li>
-                <li class="mb-2"> สามารถจัดการกับ display ใหม่ๆอย่าง flex และ grid ได้ง่ายขึ้น </li>
-                <li class="mb-2"> สามารถสร้าง components ขึ้นมาใช้งานได้เลยเหมาะกับ Modern framework อย่าง React,
-                    Angular และ VueJS </li>
-                <li class="mb-2"> สามารถ Custom breakpoint สำหรับการทำ Responsive Web ได้ </li>
-                <li class="mb-2"> สามารถสร้าง dark mode ขึ้นมาให้ user เลือกสลับ mode ไปมาได้ </li>
-            </ul>
-
-            <p>จะเห็นว่า Tailwind CSS นั้นมีความสามารถที่ช่วยแก้ปัญหาของ CSS Framework รู่นก่อนหน้า
-                และยังเหมาะกับการทำงานกับ Front-end Framework ยุคใหม่อย่าง React, Angular และ VueJS
+                นอกจากนี้ Scala มีแนวคิดของรูปแบบการจับคู่โดยธรรมชาติซึ่งสามารถขยายเป็น การประมวลผลข้อมูลด้วย XML
+                ด้วยความช่วยเหลือของ รูปแบบลำดับที่ถูกละเลย (right-ignoring sequence patterns),
+                โดยวิธีของการขยายทั่วไปผ่านทาง วัตถุตัวดึงข้อมูล (extractor object) ในบริบทนี้ การทำความเข้าใจ for
+                มีประโยชน์สำหรับการคิดสูตรคิวรี่ข้อมูล คุณลักษณะเหล่านี้ทำให้ Scala
+                เหมาะสำหรับการพัฒนาแอพพลิเคชันแบบเช่นเว็บเซอร์วิส
             </p>
-        </div>
-        <h1 class="text-3xl text-info">Tailwind CSS ทำงานยังไง</h1>
-        <div class="m-4">
-            <div class="flex flex-col justify-center items-center m-10">
-                <img src="asset/how_tailwind_work.png" class="pic rounded-lg" alt="" width="500" height="500">
-            </div>
-            <p class="text-xl">หลักการทำงานของ Tailwind CSS คือ จะมี scanner เข้าไปค้นหา TailwindCSS class ใน html,
-                Javascript หรือ file อื่นๆที่เรากำหนดไว้ใน tailwind.config.js หลังจากนั้น render output ออกมาเป็น
-                CSS(styles.css) และถ้าเราต้องการ custom stylesheet หรือสร้าง components ขึ้นมาใหม่เราจะเข้าไปเขียนใน
-                style.src.css
-            </p>
-        </div>
-        <h1 class="text-3xl text-info">Get started with Tailwind CSS</h1>
-        <div class="m-4">
-            <p class="text-xl">Tailwind CSS works by scanning all of your HTML files, JavaScript components, and any
-                other templates for class names, generating the corresponding styles and then writing them to a static
-                CSS file.
-
-                It's fast, flexible, and reliable — with zero-runtime.
-            </p>
-            <div class="flex flex-col justify-center items-center mt-10">
-               <iframe src="https://play.tailwindcss.com/biizQXffiJ" width="100%" height="600" frameborder="0"></iframe>
+            <div class="flex flex-row justify-center items-center mt-10">
+                <img src="asset/Functional-Programming-vs-OOP.png" class="pic rounded-lg mx-5" alt=""
+                    style="width: 50%;">
+                <img src="asset/FN.jpg" class="pic rounded-lg" alt="" style="width: 30%; height: 50%;">
             </div>
         </div>
-      
+        <h1 class="text-3xl text-error mb-3">Example</h1>
+        <iframe src="https://scastie.scala-lang.org/Earth123456789/gBzY35Q0Sr6jkUXo9bmdqQ/41" width="100%" height="600"  frameborder="0"></iframe>
+
+    </div>
     </div>
 
     <footer class="footer items-center p-4 bg-neutral text-neutral-content">
@@ -176,6 +159,7 @@
                 </svg></path></a>
         </nav>
     </footer>
+
     <script>
         function toggleTheme() {
             const htmlElement = document.querySelector('html');
@@ -191,14 +175,16 @@
         function animation() {
             ScrollReveal().reveal('.headline', { delay: 850 });
             ScrollReveal().reveal('.test_1', { delay: 250 });
+            ScrollReveal().reveal('.test_2', { delay: 250 });
             gsap.from(".pic", {
                 opacity: 0,
                 y: 100,
                 duration: 2
             });
-            
         }
+
         animation();
+
     </script>
 </body>
 
